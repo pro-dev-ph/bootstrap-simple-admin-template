@@ -7,7 +7,7 @@
 - New layout for dashboard page
 - New cleaner look for login, signup, and forgot password page
 - Minor UI optimizations
-- Updates for core plugins
+- Update for core plugins
 
 ### Layout features
 - Header topbar navigation
