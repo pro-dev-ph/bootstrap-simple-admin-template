@@ -1,5 +1,6 @@
 # About Bootstrap Simple Admin Template
-*Bootstrap Simple Admin Template is a simple admin template packed with more UI components than any other admin themes, its exceptional user interface is perfectly crafted and advanced layout features are optimized to suite every modern web application project and highly responsive to serve from a Mobile first to Desktop screen.* 
+*Bootstrap Simple Admin Template is a simple admin template packed with more UI components than any other admin themes, its exceptional user interface is perfectly crafted and advanced layout features are optimized to suite every modern web application project and highly responsive to serve from a Mobile first to Desktop screen.* View live demo!
+[Click here](https://alexis-luna.github.io/bootstrap-simple-admin-template/)
 
 ![Bootstrap Simple Admin Template - Dashboard](https://i.postimg.cc/xjG9yLNw/bootstrap-simple-admin-template.png)
 
