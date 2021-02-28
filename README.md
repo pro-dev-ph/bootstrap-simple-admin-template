@@ -7,7 +7,7 @@
 - New layout for dashboard page
 - New cleaner look for login, signup, and forgot password page
 - Minor UI optimizations
-- Update for core plugins
+- Upgrade to Bootstrap 4.6
 
 View live demo!
 [view demo](https://alexis-luna.github.io/bootstrap-simple-admin-template/)

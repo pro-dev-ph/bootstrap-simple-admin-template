@@ -1,10 +1,3 @@
-/*------------------------------------------------------------------
-* Bootstrap Simple Admin Template
-* Version: 2.0
-* Author: Alexis Luna
-* Copyright 2020 Alexis Luna
-* Website: https://github.com/alexis-luna/bootstrap-simple-admin-template
--------------------------------------------------------------------*/
 // Starter JavaScript for disabling form submissions if there are invalid fields
 (function() {
     'use strict';
