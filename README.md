@@ -4,10 +4,8 @@
 ![Bootstrap Simple Admin Template - Dashboard](https://i.postimg.cc/xjG9yLNw/bootstrap-simple-admin-template.png)
 
 ### What's New?
-- New layout for dashboard page
-- New cleaner look for login, signup, and forgot password page
-- Minor UI optimizations
-- Upgrade to Bootstrap 4.6
+- Upgrade Bootstrap to version 5.0.2
+- Updated third-party plugins to recent versions
 
 View live demo!
 [view demo](https://alexis-luna.github.io/bootstrap-simple-admin-template/)

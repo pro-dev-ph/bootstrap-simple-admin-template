@@ -1,6 +1,6 @@
 /*------------------------------------------------------------------
 * Bootstrap Simple Admin Template
-* Version: 2.1
+* Version: 3.0
 * Author: Alexis Luna
 * Website: https://github.com/alexis-luna/bootstrap-simple-admin-template
 -------------------------------------------------------------------*/
@@ -341,6 +341,7 @@ table.dataTable>tbody>tr.child ul.dtr-details {
     border: none;
     -webkit-transition: color .1s ease;
     transition: color .1s ease;
+    color: inherit;
 }
 
 .nav-tabs .nav-item.show .nav-link,

@@ -21,74 +21,75 @@
 
 <body>
     <div class="wrapper">
+        <!-- sidebar navigation component -->
         <nav id="sidebar" class="active">
             <div class="sidebar-header">
                 <img src="assets/img/bootstraper-logo.png" alt="bootraper logo" class="app-logo">
             </div>
             <ul class="list-unstyled components text-secondary">
                 <li>
-                    <a href="dashboard.html"><i class="fas fa-home"></i> Dashboard</a>
+                    <a href="dashboard.html"><i class="fas fa-home"></i>Dashboard</a>
                 </li>
                 <li>
-                    <a href="forms.html"><i class="fas fa-file-alt"></i> Forms</a>
+                    <a href="forms.html"><i class="fas fa-file-alt"></i>Forms</a>
                 </li>
                 <li>
-                    <a href="tables.html"><i class="fas fa-table"></i> Tables</a>
+                    <a href="tables.html"><i class="fas fa-table"></i>Tables</a>
                 </li>
                 <li>
-                    <a href="charts.html"><i class="fas fa-chart-bar"></i> Charts</a>
+                    <a href="charts.html"><i class="fas fa-chart-bar"></i>Charts</a>
                 </li>
                 <li>
-                    <a href="icons.html"><i class="fas fa-icons"></i> Icons</a>
+                    <a href="icons.html"><i class="fas fa-icons"></i>Icons</a>
                 </li>
                 <li>
-                    <a href="#uielementsmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i class="fas fa-layer-group"></i> UI Elements</a>
+                    <a href="#uielementsmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i class="fas fa-layer-group"></i>UI Elements</a>
                     <ul class="collapse list-unstyled" id="uielementsmenu">
                         <li>
-                            <a href="ui-buttons.html"><i class="fas fa-angle-right"></i> Buttons</a>
+                            <a href="ui-buttons.html"><i class="fas fa-angle-right"></i>Buttons</a>
                         </li>
                         <li>
-                            <a href="ui-badges.html"><i class="fas fa-angle-right"></i> Badges</a>
+                            <a href="ui-badges.html"><i class="fas fa-angle-right"></i>Badges</a>
                         </li>
                         <li>
-                            <a href="ui-cards.html"><i class="fas fa-angle-right"></i> Cards</a>
+                            <a href="ui-cards.html"><i class="fas fa-angle-right"></i>Cards</a>
                         </li>
                         <li>
-                            <a href="ui-alerts.html"><i class="fas fa-angle-right"></i> Alerts</a>
+                            <a href="ui-alerts.html"><i class="fas fa-angle-right"></i>Alerts</a>
                         </li>
                         <li>
-                            <a href="ui-tabs.html"><i class="fas fa-angle-right"></i> Tabs</a>
+                            <a href="ui-tabs.html"><i class="fas fa-angle-right"></i>Tabs</a>
                         </li>
                         <li>
-                            <a href="ui-date-time-picker.html"><i class="fas fa-angle-right"></i> Date & Time Picker</a>
+                            <a href="ui-date-time-picker.html"><i class="fas fa-angle-right"></i>Date & Time Picker</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#authmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i class="fas fa-user-shield"></i> Authentication</a>
+                    <a href="#authmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i class="fas fa-user-shield"></i>Authentication</a>
                     <ul class="collapse list-unstyled" id="authmenu">
                         <li>
-                            <a href="login.html"><i class="fas fa-lock"></i> Login</a>
+                            <a href="login.html"><i class="fas fa-lock"></i>Login</a>
                         </li>
                         <li>
-                            <a href="signup.html"><i class="fas fa-user-plus"></i> Signup</a>
+                            <a href="signup.html"><i class="fas fa-user-plus"></i>Signup</a>
                         </li>
                         <li>
-                            <a href="forgot-password.html"><i class="fas fa-user-lock"></i> Forgot password</a>
+                            <a href="forgot-password.html"><i class="fas fa-user-lock"></i>Forgot password</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#pagesmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i class="fas fa-copy"></i> Pages</a>
+                    <a href="#pagesmenu" data-bs-toggle="collapse" aria-expanded="false" class="dropdown-toggle no-caret-down"><i class="fas fa-copy"></i>Pages</a>
                     <ul class="collapse list-unstyled" id="pagesmenu">
                         <li>
-                            <a href="blank.html"><i class="fas fa-file"></i> Blank page</a>
+                            <a href="blank.html"><i class="fas fa-file"></i>Blank page</a>
                         </li>
                         <li>
-                            <a href="404.html"><i class="fas fa-info-circle"></i> 404 Error page</a>
+                            <a href="404.html"><i class="fas fa-info-circle"></i>404 Error page</a>
                         </li>
                         <li>
-                            <a href="500.html"><i class="fas fa-info-circle"></i> 500 Error page</a>
+                            <a href="500.html"><i class="fas fa-info-circle"></i>500 Error page</a>
                         </li>
                     </ul>
                 </li>
@@ -100,15 +101,21 @@
                 </li>
             </ul>
         </nav>
+        <!-- end of sidebar component -->
         <div id="body" class="active">
+            <!-- navbar navigation component -->
             <nav class="navbar navbar-expand-lg navbar-white bg-white">
-                <button type="button" id="sidebarCollapse" class="btn btn-light"><i class="fas fa-bars"></i><span></span></button>
+                <button type="button" id="sidebarCollapse" class="btn btn-light">
+                    <i class="fas fa-bars"></i><span></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav ml-auto">
+                    <ul class="nav navbar-nav ms-auto">
                         <li class="nav-item dropdown">
                             <div class="nav-dropdown">
-                                <a href="" class="nav-item nav-link dropdown-toggle text-secondary" data-toggle="dropdown"><i class="fas fa-link"></i> <span>Quick Links</span> <i style="font-size: .8em;" class="fas fa-caret-down"></i></a>
-                                <div class="dropdown-menu dropdown-menu-right nav-link-menu">
+                                <a href="#" id="nav1" class="nav-item nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-link"></i> <span>Quick Links</span> <i style="font-size: .8em;" class="fas fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end nav-link-menu" aria-labelledby="nav1">
                                     <ul class="nav-list">
                                         <li><a href="" class="dropdown-item"><i class="fas fa-list"></i> Access Logs</a></li>
                                         <div class="dropdown-divider"></div>
@@ -123,8 +130,10 @@
                         </li>
                         <li class="nav-item dropdown">
                             <div class="nav-dropdown">
-                                <a href="" class="nav-item nav-link dropdown-toggle text-secondary" data-toggle="dropdown"><i class="fas fa-user"></i> <span>John Doe</span> <i style="font-size: .8em;" class="fas fa-caret-down"></i></a>
-                                <div class="dropdown-menu dropdown-menu-right nav-link-menu">
+                                <a href="#" id="nav2" class="nav-item nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-user"></i> <span>John Doe</span> <i style="font-size: .8em;" class="fas fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end nav-link-menu">
                                     <ul class="nav-list">
                                         <li><a href="" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
                                         <li><a href="" class="dropdown-item"><i class="fas fa-envelope"></i> Messages</a></li>
@@ -138,6 +147,7 @@
                     </ul>
                 </div>
             </nav>
+            <!-- end of navbar navigation -->
             <div class="content">
                 <div class="container">
                     <div class="page-title">
@@ -147,54 +157,48 @@
                         <div class="box-body">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="general-tab" data-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">General</a>
+                                    <a class="nav-link active" id="general-tab" data-bs-toggle="tab" href="#general" role="tab" aria-controls="general" aria-selected="true">General</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="system-tab" data-toggle="tab" href="#system" role="tab" aria-controls="system" aria-selected="false">System</a>
+                                    <a class="nav-link" id="system-tab" data-bs-toggle="tab" href="#system" role="tab" aria-controls="system" aria-selected="false">System</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="email-tab" data-toggle="tab" href="#email" role="tab" aria-controls="email" aria-selected="false">Email</a>
+                                    <a class="nav-link" id="email-tab" data-bs-toggle="tab" href="#email" role="tab" aria-controls="email" aria-selected="false">Email</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="appearance-tab" data-toggle="tab" href="#appearance" role="tab" aria-controls="appearance" aria-selected="false">Appearance</a>
+                                    <a class="nav-link" id="appearance-tab" data-bs-toggle="tab" href="#appearance" role="tab" aria-controls="appearance" aria-selected="false">Appearance</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="attributions-tab" data-toggle="tab" href="#attributions" role="tab" aria-controls="attributions" aria-selected="false">Attributions</a>
+                                    <a class="nav-link" id="attributions-tab" data-bs-toggle="tab" href="#attributions" role="tab" aria-controls="attributions" aria-selected="false">Attributions</a>
                                 </li>
                             </ul>
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade active show" id="general" role="tabpanel" aria-labelledby="general-tab">
                                     <div class="col-md-6">
                                         <p class="text-muted">General settings such as, site title, site description, address and so on.</p>
-                                        <div class="form-group">
-                                            <label for="site-title" class="form-control-label">Site Title</label>
+                                        <div class="mb-3">
+                                            <label for="site-title" class="form-label">Site Title</label>
                                             <input type="text" name="site_title" class="form-control">
                                         </div>
-                                        <div class="form-group">
-                                            <label for="site-description" class="form-control-label">Site Description</label>
+                                        <div class="mb-3">
+                                            <label for="site-description" class="form-label">Site Description</label>
                                             <textarea class="form-control" name="site_description"></textarea>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="form-control-label">Site Logo</label>
-                                            <div class="custom-file">
-                                                <input type="file" name="site_logo" class="custom-file-input">
-                                                <label class="custom-file-label">Choose File</label>
-                                            </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Site Logo</label>
+                                              <input class="form-control" name="site_logo" type="file" id="formFile1">
                                             <small class="text-muted">The image must have a maximum size of 1MB</small>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="form-control-label">Favicon</label>
-                                            <div class="custom-file">
-                                                <input type="file" name="site_favicon" class="custom-file-input">
-                                                <label class="custom-file-label">Choose File</label>
-                                            </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Favicon</label>
+                                              <input class="form-control" name="site_favicon" type="file" id="formFile2">
                                             <small class="text-muted">The image must have a maximum size of 1MB</small>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="form-control-label">Google Analytics Code</label>
+                                        <div class="mb-3">
+                                            <label class="form-label">Google Analytics Code</label>
                                             <textarea class="form-control" name="google_analytics_code" rows="4"></textarea>
                                         </div>
-                                        <div class="form-group text-right">
+                                        <div class="mb-3 text-end">
                                             <button class="btn btn-success" type="submit"><i class="fas fa-check"></i> Save</button>
                                         </div>
                                     </div>
@@ -202,17 +206,17 @@
                                 <div class="tab-pane fade" id="system" role="tabpanel" aria-labelledby="system-tab">
                                     <div class="col-md-6">
                                         <p class="text-muted">Application settings, language, time zones and other environments.</p>
-                                        <div class="form-group">
-                                            <label for="language" class="form-control-label">Default Language</label>
-                                            <select class="form-control" name="language">
+                                        <div class="mb-3">
+                                            <label for="language" class="form-label">Default Language</label>
+                                            <select class="form-select" name="language">
                                                 <option value="en">English</option>
                                                 <option value="es">Spanish</option>
                                                 <option value="fr">French</option>
                                             </select>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="site-title" class="form-control-label">Time zone</label>
-                                            <select name="timezone" class="form-control">
+                                        <div class="mb-3">
+                                            <label for="site-title" class="form-label">Time zone</label>
+                                            <select name="timezone" class="form-select">
                                                 <option value="">Select your Time zone</option>
                                                 <option value="Pacific/Midway">(UTC -11:00) Pacific/Midway</option>
                                                 <option value="Pacific/Niue">(UTC -11:00) Pacific/Niue</option>
@@ -641,19 +645,19 @@
                                                 <option value="Pacific/Tongatapu">(UTC +14:00) Pacific/Tongatapu</option>
                                             </select>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="dateformat" class="form-control-label">Date format</label>
-                                            <select class="form-control" name="dateformat">
+                                        <div class="mb-3">
+                                            <label for="dateformat" class="form-label">Date format</label>
+                                            <select class="form-select" name="dateformat">
                                                 <option value="">mm-dd-yyyy</option>
                                                 <option value="">dd-mm-yyyy</option>
                                                 <option value="">yyyy-mm-dd</option>
                                             </select>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="form-control-label">IP Restriction</label>
+                                        <div class="mb-3">
+                                            <label class="form-label">IP Restriction</label>
                                             <textarea class="form-control" name="" rows="3" placeholder="Enter IP addresses, if more than one add comma after each IP address"></textarea>
                                         </div>
-                                        <div class="form-group text-right">
+                                        <div class="mb-3 text-end">
                                             <button class="btn btn-success" type="submit"><i class="fas fa-check"></i> Save</button>
                                         </div>
                                     </div>
@@ -661,41 +665,41 @@
                                 <div class="tab-pane fade" id="email" role="tabpanel" aria-labelledby="email-tab">
                                     <div class="col-md-6">
                                         <p class="text-muted">Email SMTP settings, notifications and others related to email.</p>
-                                        <div class="form-group">
-                                            <label for="" class="form-control-label">Protocol</label>
-                                            <select name="" class="form-control">
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">Protocol</label>
+                                            <select name="" class="form-select">
                                                 <option value="">Select Protocol</option>
                                                 <option value="">SMTP</option>
                                                 <option value="">Sendmail</option>
                                                 <option value="">PHP Mailer</option>
                                             </select>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="" class="form-control-label">SMTP Host</label>
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">SMTP Host</label>
                                             <input type="text" name="" class="form-control">
                                         </div>
-                                        <div class="form-group">
-                                            <label for="" class="form-control-label">SMTP Username</label>
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">SMTP Username</label>
                                             <input type="text" name="" class="form-control">
                                         </div>
-                                        <div class="form-group">
-                                            <label for="" class="form-control-label">SMTP Security</label>
-                                            <select name="" class="form-control">
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">SMTP Security</label>
+                                            <select name="" class="form-select">
                                                 <option value="">Select SMTP Security</option>
                                                 <option value="">TLS</option>
                                                 <option value="">SSL</option>
                                                 <option value="">None</option>
                                             </select>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="" class="form-control-label">SMTP Port</label>
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">SMTP Port</label>
                                             <input type="text" name="" class="form-control">
                                         </div>
-                                        <div class="form-group">
-                                            <label for="" class="form-control-label">SMTP Password</label>
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">SMTP Password</label>
                                             <input type="password" name="" class="form-control">
                                         </div>
-                                        <div class="form-group text-right">
+                                        <div class="mb-3 text-end">
                                             <button class="btn btn-success" type="submit"><i class="fas fa-check"></i> Save</button>
                                         </div>
                                     </div>
@@ -703,25 +707,25 @@
                                 <div class="tab-pane fade" id="appearance" role="tabpanel" aria-labelledby="appearance-tab">
                                     <div class="col-md-6">
                                         <p class="text-muted">Settings about appearance such as themes, icon and color scheme.</p>
-                                        <div class="form-group">
-                                            <label for="" class="form-control-label">Theme</label>
-                                            <select name="" class="form-control">
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">Theme</label>
+                                            <select name="" class="form-select">
                                                 <option value="">Select theme</option>
                                                 <option value="">Dark</option>
                                                 <option value="">Light</option>
                                                 <option value="">Classic</option>
                                             </select>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="" class="form-control-label">Display colored icons</label>
-                                            <select name="" class="form-control">
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">Display colored icons</label>
+                                            <select name="" class="form-select">
                                                 <option value="">Enabled</option>
                                                 <option value="">Disabled</option>
                                             </select>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="" class="form-control-label">Set default font size</label>
-                                            <select name="" class="form-control">
+                                        <div class="mb-3">
+                                            <label for="" class="form-label">Set default font size</label>
+                                            <select name="" class="form-select">
                                                 <option value="">10</option>
                                                 <option value="">12</option>
                                                 <option value="">13</option>
@@ -734,17 +738,17 @@
                                                 <option value="">20</option>
                                             </select>
                                         </div>
-                                        <div class="form-group text-right">
+                                        <div class="mb-3 text-end">
                                             <button class="btn btn-success" type="submit"><i class="fas fa-check"></i> Save</button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="attributions" role="tabpanel" aria-labelledby="attributions-tab">
                                     <h4 class="mb-0">Legal Notice</h4>
-                                    <p class="text-muted">Copyright (c) 2019 Brian Luna. All rights reserved.</p>
+                                    <p class="text-muted">Copyright (c) 2021 Brian Luna. All rights reserved.</p>
                                     <p class="mb-0"><strong>Bootstrap</strong></p>
                                     <p class="text-muted">The MIT License (MIT)</p>
-                                    <p class="license col-md-6">
+                                    <p class="ps-4 col-md-6">
                                         Copyright 2011-2018 Twitter, Inc. <br><br>
                                         Permission is hereby granted, free of charge, to any person obtaining a copy
                                         of this software and associated documentation files (the "Software"), to deal
@@ -766,7 +770,7 @@
                                     </p>
                                     <p class="mb-0"><strong>jQuery JavaScript Library</strong></p>
                                     <p class="text-muted">The MIT License (MIT)</p>
-                                    <p class="license col-md-6">
+                                    <p class="ps-4 col-md-6">
                                         Copyright jQuery Foundation and other contributors <br><br>
                                         Permission is hereby granted, free of charge, to any person obtaining a copy
                                         of this software and associated documentation files (the "Software"), to deal
@@ -788,7 +792,7 @@
                                     </p>
                                     <p class="mb-0"><strong>DataTables</strong></p>
                                     <p class="text-muted">The MIT License (MIT)</p>
-                                    <p class="license col-md-6">
+                                    <p class="ps-4 col-md-6">
                                         Copyright 2008-2018 SpryMedia Ltd <br><br>
                                         Permission is hereby granted, free of charge, to any person obtaining a copy
                                         of this software and associated documentation files (the "Software"), to deal
@@ -810,7 +814,7 @@
                                     </p>
                                     <p class="mb-0"><strong>Chart.js</strong></p>
                                     <p class="text-muted">The MIT License (MIT)</p>
-                                    <p class="license col-md-6">
+                                    <p class="ps-4 col-md-6">
                                         Copyright 2018 Chart.js Contributors <br><br>
                                         Permission is hereby granted, free of charge, to any person obtaining a copy
                                         of this software and associated documentation files (the "Software"), to deal
@@ -832,7 +836,7 @@
                                     </p>
                                     <p class="mb-0"><strong>Air Datepicker</strong></p>
                                     <p class="text-muted">The MIT License (MIT)</p>
-                                    <p class="license col-md-6">
+                                    <p class="ps-4 col-md-6">
                                         Copyright (c) 2016 Timofey Marochkin <br><br>
                                         Permission is hereby granted, free of charge, to any person obtaining a copy
                                         of this software and associated documentation files (the "Software"), to deal
@@ -854,7 +858,7 @@
                                     </p>
                                     <p class="mb-0"><strong>MDTimePicker</strong></p>
                                     <p class="text-muted">The MIT License (MIT)</p>
-                                    <p class="license col-md-6">
+                                    <p class="ps-4 col-md-6">
                                         Copyright (c) 2017 Dionlee Uy <br><br>
                                         Permission is hereby granted, free of charge, to any person obtaining a copy
                                         of this software and associated documentation files (the "Software"), to deal
@@ -876,7 +880,7 @@
                                     </p>
                                     <p class="mb-0"><strong>Fontawesome</strong></p>
                                     <p class="text-muted">The MIT License (MIT)</p>
-                                    <p class="license col-md-6">
+                                    <p class="ps-4 col-md-6">
                                         Font Awesome Free License <br><br>
                                         Permission is hereby granted, free of charge, to any person obtaining a copy
                                         of this software and associated documentation files (the "Software"), to deal
@@ -898,7 +902,7 @@
                                     </p>
                                     <p class="mb-0"><strong>Flag Icon CSS</strong></p>
                                     <p class="text-muted">The MIT License (MIT)</p>
-                                    <p class="license col-md-6">
+                                    <p class="ps-4 col-md-6">
                                         Copyright (c) 2013 Panayiotis Lipiridis <br><br>
                                         Permission is hereby granted, free of charge, to any person obtaining a copy
                                         of this software and associated documentation files (the "Software"), to deal
