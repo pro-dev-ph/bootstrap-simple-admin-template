@@ -8,7 +8,7 @@
 - Updated third-party plugins to recent versions
 
 View live demo!
-[view demo](https://nairbanul.github.io/bootstrap-simple-admin-template/)
+[view demo](https://pro-dev-ph.github.io/bootstrap-simple-admin-template/)
 
 ### Layout features
 - Header topbar navigation
