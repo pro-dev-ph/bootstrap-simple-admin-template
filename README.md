@@ -4,7 +4,7 @@
 ![Bootstrap Simple Admin Template - Dashboard](https://i.postimg.cc/xjG9yLNw/bootstrap-simple-admin-template.png)
 
 ### What's New?
-- Upgrade Bootstrap to version 5.0.2
+- Upgrade Bootstrap to version 5.3
 - Updated third-party plugins to recent versions
 
 View live demo!
