@@ -92,6 +92,22 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/form-validator.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        // Add event listener for form submission
+        document.getElementById('addIngredientForm').addEventListener('submit', function(event) {
+            // Prevent default form submission behavior
+            event.preventDefault();
+
+            // Retrieve the ingredient name from the input field
+            const ingredientName = document.getElementById('ingredientName').value;
+
+            // Call the addIngredient function from database.js
+            addIngredient(ingredientName, user.Id);
+
+            // Redirect the user to pantry.html
+            location.href = 'pantry.html';
+        });
+    </script>
 </body>
 
 </html>
