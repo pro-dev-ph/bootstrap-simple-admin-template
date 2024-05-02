@@ -6,61 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tables | Bootstrap Simple Admin Template</title>
+    <!-- External CSS stylesheets -->
     <link href="assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
     <link href="assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
     <link href="assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/datatables/datatables.min.css" rel="stylesheet">
-    <link href="assets/css/master.css" rel="stylesheet">
+    <link href="assets/css/master.css" rel="stylesheet"> <!-- Custom CSS stylesheet -->
 </head>
 
 <body>
     <div class="wrapper">
-        <!-- sidebar navigation component -->
+        <!-- Sidebar navigation component -->
         <nav id="sidebar" class="active">
             <div class="sidebar-header">
                 <img src="assets/img/PanTRY.png" alt="bootraper logo" class="app-logo">
             </div>
+            <!-- Sidebar navigation links -->
             <ul class="list-unstyled components text-secondary">
                 <li>
                     <a href="/home"><i class="fas fa-home"></i> Home</a>
                 </li>
                 <li>
-                    <a href="/cookbook"><i class="fas fa-book-open"></i>Cookbook</a>
+                    <a href="/cookbook"><i class="fas fa-book-open"></i> Cookbook</a>
                 </li>
                 <li>
-                    <a href="/pantry"><i class="fas fa-hamburger"></i>Pantry</a>
+                    <a href="/pantry"><i class="fas fa-hamburger"></i> Pantry</a>
                 </li>
-
             </ul>
         </nav>
-        <!-- end of sidebar component -->
+        <!-- End of sidebar component -->
         <div id="body" class="active">
-            <!-- navbar navigation component -->
+            <!-- Navbar navigation component -->
             <nav class="navbar navbar-expand-lg navbar-white bg-white">
                 <button type="button" id="sidebarCollapse" class="btn btn-light">
                     <i class="fas fa-bars"></i><span></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Navbar links aligned to the right -->
                     <ul class="nav navbar-nav ms-auto">
                         <li class="nav-item">
                             <a href="/profile" class="nav-link text-secondary">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-user"></i> <!-- User profile icon -->
                             </a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <!-- end of navbar navigation -->
+            <!-- End of navbar navigation -->
             <div class="content">
                 <div class="container">
                     <div class="page-title">
-                        <h3>Cookbook</h3>
+                        <h3>Cookbook</h3> <!-- Title of the page -->
                     </div>
                     <div class="row">
                         <div class="col-md-12 col-lg-12">
                             <div class="card">
-                                <div class="card-header">Your Recipes</div>
+                                <div class="card-header">Your Recipes</div> <!-- Card header -->
                                 <div class="card-body">
                                     <div class="table-responsive">
                                         <table class="table table-striped">
@@ -73,6 +75,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                <!-- Table rows containing recipe data -->
                                                 <tr>
                                                     <th scope="row">1</th>
                                                     <td>Spaghetti</td>
@@ -102,9 +105,11 @@
             </div>
         </div>
     </div>
+    <!-- External JavaScript libraries -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/datatables/datatables.min.js"></script>
+    <!-- Custom JavaScript files -->
     <script src="assets/js/initiate-datatables.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
