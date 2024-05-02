@@ -11,13 +11,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dashboard | Bootstrap Simple Admin Template</title>
+    <title>Home | PanTRY</title>
     <link href="assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
     <link href="assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
     <link href="assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/master.css" rel="stylesheet">
     <link href="assets/vendor/flagiconcss/css/flag-icon.min.css" rel="stylesheet">
+    <style>
+        .black-square {
+            position: relative;
+            background-color: black;
+            width: calc(33.33% - 20px); /* Adjust the width for 3 columns with some spacing */
+            height: 200px; /* Adjust the height as needed */
+            margin-bottom: 20px;
+            margin-top: 10px; /* Add spacing to the top */
+            margin-right: 10px; /* Add spacing between the squares */
+            display: inline-block;
+        }
+    
+        .square-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white; /* Change text color if needed */
+            font-size: 20px; /* Adjust font size */
+        }
+    </style>
+    
+    
+    
+      
 </head>
 
 <body>
@@ -47,10 +72,21 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="profile.html" class="nav-link text-secondary">
-                                <i class="fas fa-user"></i>
-                            </a>
+                        <li class="nav-item dropdown">
+                            <div class="nav-dropdown">
+                                <a href="#" id="nav2" class="nav-item nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-user"></i> <span>John Doe</span> <i style="font-size: .8em;" class="fas fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end nav-link-menu">
+                                    <ul class="nav-list">
+                                        <li><a href="profile.html" class="dropdown-item"><i class="fas fa-address-card"></i> Profile</a></li>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-envelope"></i> Messages</a></li>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-cog"></i> Settings</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li><a href="" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -62,37 +98,40 @@
                         <div class="col-md-12 text-center">
                             <input type="text" class="form-control" placeholder="Search Recipe">
                             <button class="btn btn-primary mt-3">Search</button>
-                            <form action="add-ingredient.html">
-                                <button class="btn btn-secondary mt-3">Add Ingredient</button>
-                              </form>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-3 mt-3">
-                            <!-- Card 1 content -->
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3 mt-3">
-                            <!-- Card 2 content -->
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3 mt-3">
-                            <!-- Card 3 content -->
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3 mt-3">
-                            <!-- Card 4 content -->
+                            <button class="btn btn-secondary mt-3">Add Ingredient</button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <!-- Traffic Overview Card -->
+                            <div class="black-square-container">
+                                <div class="black-square">
+                                    <span class="square-text">Recipe 1</span>
                                 </div>
-                                <div class="col-md-6">
-                                    <!-- Sales Overview Card -->
+                                <div class="black-square">
+                                    <span class="square-text">Recipe 2</span>
+                                </div>
+                                <div class="black-square">
+                                    <span class="square-text">Recipe 3</span>
+                                </div>
+                                <div class="black-square">
+                                    <span class="square-text">Recipe 4</span>
+                                </div>
+                                <div class="black-square">
+                                    <span class="square-text">Recipe 5</span>
+                                </div>
+                                <div class="black-square">
+                                    <span class="square-text">Recipe 6</span>
+                                </div>
+                                <div class="black-square">
+                                    <span class="square-text">Recipe 7</span>
+                                </div>
+                                <div class="black-square">
+                                    <span class="square-text">Recipe 8</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                                                  
                 </div>
             </div>            
         </div>
