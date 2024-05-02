@@ -1,48 +1,48 @@
-<!doctype html>
-<html lang="en">
+<!doctype html> <!-- Document type declaration -->
+<html lang="en"> <!-- Start of HTML document with language set to English -->
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Login</title>
-    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/css/auth.css" rel="stylesheet">
-    <style>
+<head> <!-- Start of head section -->
+    <meta charset="utf-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Viewport settings -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibility settings -->
+    <title>Login</title> <!-- Document title -->
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap CSS -->
+    <link href="../assets/css/auth.css" rel="stylesheet"> <!-- Custom CSS for authentication -->
+    <style>  
         .brand {
-            width: 150px; /* Adjust the width as needed */
-            height: auto; /* Maintain aspect ratio */
+            width: 150px; /* Adjust the width as needed */ 
+            height: auto; /* Maintain aspect ratio */ 
         }
-    </style>
-</head>
+    </style> <!-- End of internal CSS styling -->
+</head> <!-- End of head section -->
 
-<body>
-    <div class="wrapper">
-        <div class="auth-content">
-            <div class="card">
-                <div class="card-body text-center">
-                    <div class="mb-4">
-                        <img class="brand" src="../assets/img/PanTRY.png" alt="PanTRY">
-                    </div>
-                    <h6 class="mb-4 text-muted">Login to your account</h6>
-                    <form action="/login" method="POST">
-                        <div class="mb-3 text-start">
-                            <label for="username" class="form-label">Username</label>
-                            <input type="text" name="username" id="username" class="form-control" placeholder="Enter Username" required>
-                        </div>
-                        <div class="mb-3 text-start">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
-                        </div>
-                        <button id="submit" class="btn btn-primary shadow-2 mb-4" type="submit">Login</button>
-                    </form>
-                    <p class="mb-0 text-muted">Don't have an account yet? <a href="/register">Signup</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="/assets/vendor/jquery/jquery.min.js"></script>
-    <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-</body>
+<body> <!-- Start of body section -->
+    <div class="wrapper"> <!-- Wrapper div -->
+        <div class="auth-content"> <!-- Authentication content -->
+            <div class="card"> <!-- Card container -->
+                <div class="card-body text-center"> <!-- Card body with text centered -->
+                    <div class="mb-4"> <!-- Margin bottom for branding -->
+                        <img class="brand" src="../assets/img/PanTRY.png" alt="PanTRY"> <!-- Brand logo -->
+                    </div> <!-- End of margin bottom for branding -->
+                    <h6 class="mb-4 text-muted">Login to your account</h6> <!-- Login title -->
+                    <form action="/login" method="POST"> <!-- Login form -->
+                        <div class="mb-3 text-start"> <!-- Margin bottom for username field -->
+                            <label for="username" class="form-label">Username</label> <!-- Label for username field -->
+                            <input type="text" name="username" id="username" class="form-control" placeholder="Enter Username" required> <!-- Username input field -->
+                        </div> <!-- End of margin bottom for username field -->
+                        <div class="mb-3 text-start"> <!-- Margin bottom for password field -->
+                            <label for="password" class="form-label">Password</label> <!-- Label for password field -->
+                            <input type="password" name="password" id="password" class="form-control" placeholder="Password" required> <!-- Password input field -->
+                        </div> <!-- End of margin bottom for password field -->
+                        <button id="submit" class="btn btn-primary shadow-2 mb-4" type="submit">Login</button> <!-- Submit button -->
+                    </form> <!-- End of login form -->
+                    <p class="mb-0 text-muted">Don't have an account yet? <a href="/register">Signup</a></p> <!-- Signup link -->
+                </div> <!-- End of card body with text centered -->
+            </div> <!-- End of card container -->
+        </div> <!-- End of authentication content -->
+    </div> <!-- End of wrapper div -->
+    <script src="/assets/vendor/jquery/jquery.min.js"></script> <!-- jQuery -->
+    <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script> <!-- Bootstrap JavaScript -->
+</body> <!-- End of body section -->
 
-</html>
+</html> <!-- End of HTML document -->
