@@ -29,7 +29,7 @@
             </div>
             <ul class="list-unstyled components text-secondary">
                 <li>
-                    <a href="Home.html"><i class="fas fa-home"></i> Home</a>
+                    <a href="index.html"><i class="fas fa-home"></i> Home</a>
                 </li>
                 <li>
                     <a href="cookbook.html"><i class="fas fa-book-open"></i>Cookbook</a>
@@ -75,14 +75,15 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Ingredient 1</td>
-                                        <td class="text-end">
-                                            <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-pen"></i></a>
-                                            <a href="" class="btn btn-outline-danger btn-rounded"><i class="fas fa-trash"></i></a>
-                                        </td>
-                                    </tr>
-                                    <!-- Add more ingredients here -->
+                                    <% ingredients.forEach(userID => { %>
+                                        <tr>
+                                            <td><%= ingredient.Name %></td>
+                                            <td class="text-end">
+                                                <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-pen"></i></a>
+                                                <a href="" class="btn btn-outline-danger btn-rounded"><i class="fas fa-trash"></i></a>
+                                            </td>
+                                        </tr>
+                                    <% }); %>
                                 </tbody>
                             </table>
                         </div>
