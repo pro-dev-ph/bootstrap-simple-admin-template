@@ -1,12 +1,14 @@
 const mysql = require('mysql2');
+require('dotenv').config();
+
 
 // Create a connection pool
 const db = mysql.createConnection({
-    host: 'recipeappdbinstance.c1eq4a4gwcx9.us-east-2.rds.amazonaws.com',
-    port:  3306,
-    user: 'admin',
-    password: 'FoodApp$$81',
-    database: 'RecipeApp'
+    host: process.env.AWS_HOST,
+    port:  process.env.AWS_PORT,
+    user: process.env.AWS_USER,
+    password: process.env.AWS_PASSWORD,
+    database: process.env.AWS_DB
 });
 
 db.connect((err) => {
@@ -53,15 +55,41 @@ function addUser(username, password){
     })
 }
 
-
 // Function to get user ingredients from the database
 function getUserIngredients(userId) {
-
+    return new Promise((resolve, reject) => {
+            const sql = 'SELECT * FROM Ingredients WHERE UserId = ?';
+            db.query(sql, [userId], (err, results) => {
+                if (err) {
+                     reject(err);
+                }
+                else {
+                     if (results.length >= 0) {
+                         resolve(results);
+                     }
+                     else {
+                         resolve(null);
+                     }
+                }
+            });
+         });
 }
 
-
-function addIngredientToUser(){
+// Function to save ingredient
+function addIngredient(name, userId) {
+return new Promise((resolve, reject) => {
+        const sql = 'INSERT INTO Ingredients (Name, UserId) VALUES (?, ?)';
+        db.query(sql, [name, userId], (err, result) => {
+            if (err) {
+                reject(err);
+            }
+            else {
+                console.log("1 record inserted");
+                resolve(1);
+            }
+        })
+    })
 }
 
-module.exports = { getUser, addUser }
+module.exports = { getUser, addUser, getUserIngredients, addIngredient }
 

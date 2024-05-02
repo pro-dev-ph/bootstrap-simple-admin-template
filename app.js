@@ -1,9 +1,21 @@
 // Importing libraries
+const { getUser, addUser, getUserIngredients, addIngredients } = require('./database.js')
 const express = require('express');
+const session = require('express-session');
 const path = require('path');
-const { getUser, addUser } = require('./database.js')
 
+// Initializing app
 const app = express();
+
+// Creating an express session for passing user info across pages
+app.use(session({
+    secret: 'your-secret-key',
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+        expires: 600000
+    }
+}));
 
 // whats going on here
 const PORT = process.env.PORT || 3300;
@@ -49,6 +61,7 @@ app.post("/login", async (req, res) => {
             }
             else {
                 console.log("Successfully logged in!");
+                req.session.user = existingUser;
                 res.redirect("/home"); // or index
             }
         })
@@ -72,7 +85,40 @@ app.get('/register-error', (req, res) => {
 })
 
 app.get('/home', (req, res) => {
-    res.render("home.ejs")
+    const user = req.session.user;
+    console.log(user);
+    res.render("home.ejs", { user })
+})
+
+app.get('/pantry', (req, res) => {
+    const user = req.session.user;
+    if (user === undefined){
+        res.redirect("/login")
+    }
+    else {
+        console.log(user.Username);
+        getUserIngredients(user.Id)
+            .then(ingredients => {
+                console.log(ingredients[0]);
+                res.render("pantry.ejs", { user, ingredients })
+            })
+    }
+
+})
+
+app.get('/profile', (req, res) => {
+    const user = req.session.user;
+    if (user === undefined) {
+        res.redirect("/login")
+    }
+    else {
+        res.render("profile.ejs", { user } )
+    }
+    console.log(user);
+})
+
+app.get('/cookbook', (req, res) => {
+    res.render("cookbook.ejs")
 })
 
 
