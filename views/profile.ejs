@@ -1,97 +1,98 @@
-<!doctype html>
-<html lang="en">
+<!doctype html> <!-- Document type declaration -->
+<html lang="en"> <!-- Start of HTML document with language set to English -->
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Profile | Bootstrap Simple Admin Template</title>
-    <link href="assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
-    <link href="assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
-    <link href="assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/datatables/datatables.min.css" rel="stylesheet">
-    <link href="assets/css/master.css" rel="stylesheet">
-    <style>
+<head> <!-- Start of head section -->
+    <meta charset="utf-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Viewport settings -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibility settings -->
+    <title>Profile | Bootstrap Simple Admin Template</title> <!-- Document title -->
+    <link href="assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet"> <!-- Font Awesome CSS -->
+    <link href="assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet"> <!-- Font Awesome CSS -->
+    <link href="assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet"> <!-- Font Awesome CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap CSS -->
+    <link href="assets/vendor/datatables/datatables.min.css" rel="stylesheet"> <!-- DataTables CSS -->
+    <link href="assets/css/master.css" rel="stylesheet"> <!-- Custom CSS -->
+    <style> 
         .box-body {
-            margin-top: 20px;
+            margin-top: 20px; /* Margin top for box-body container */
             position: relative; /* Make the box-body container relative */
         }
 
         .box-body strong {
-            margin-bottom: 10px;
+            margin-bottom: 10px; /* Margin bottom for strong element */
         }
 
         .logout-button {
-            position: absolute;
-            bottom: 10px; /* Adjust as needed */
-            right: 10px; /* Adjust as needed */
+            position: absolute; /* Position absolute for logout button */
+            bottom: 10px; /* Adjust as needed - distance from the bottom */
+            right: 10px; /* Adjust as needed - distance from the right */
         }
-    </style>
-</head>
+    </style> <!-- End of internal CSS styling -->
+</head> <!-- End of head section -->
 
-<body>
-    <div class="wrapper">
-        <nav id="sidebar" class="active">
-            <div class="sidebar-header">
-                <img src="assets/img/PanTRY.png" alt="bootraper logo" class="app-logo">
-            </div>
-            <ul class="list-unstyled components text-secondary">
+<body> <!-- Start of body section -->
+    <div class="wrapper"> <!-- Wrapper div -->
+        <nav id="sidebar" class="active"> <!-- Sidebar navigation with active class -->
+            <div class="sidebar-header"> <!-- Sidebar header -->
+                <img src="assets/img/PanTRY.png" alt="bootraper logo" class="app-logo"> <!-- Logo image -->
+            </div> <!-- End of sidebar header -->
+            <ul class="list-unstyled components text-secondary"> <!-- Unordered list for navigation links -->
                 <li>
-                    <a href="/home"><i class="fas fa-home"></i> Home</a>
+                    <a href="/home"><i class="fas fa-home"></i> Home</a> <!-- Home link -->
                 </li>
                 <li>
-                    <a href="/cookbook"><i class="fas fa-book-open"></i>Cookbook</a>
+                    <a href="/cookbook"><i class="fas fa-book-open"></i>Cookbook</a> <!-- Cookbook link -->
                 </li>
                 <li>
-                    <a href="/pantry"><i class="fas fa-hamburger"></i>Pantry</a>
+                    <a href="/pantry"><i class="fas fa-hamburger"></i>Pantry</a> <!-- Pantry link -->
                 </li>
 
-            </ul>
-        </nav>
+            </ul> <!-- End of navigation links -->
+        </nav> <!-- End of sidebar component -->
         <!-- end of sidebar component -->
-        <div id="body" class="active">
+        <div id="body" class="active"> <!-- Start of body content -->
             <!-- navbar navigation component -->
-            <nav class="navbar navbar-expand-lg navbar-white bg-white">
-                <button type="button" id="sidebarCollapse" class="btn btn-light">
-                    <i class="fas fa-bars"></i><span></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="nav navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="/profile" class="nav-link text-secondary">
-                                <i class="fas fa-user"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-white bg-white"> <!-- Navbar navigation -->
+                <button type="button" id="sidebarCollapse" class="btn btn-light"> <!-- Button for collapsing sidebar -->
+                    <i class="fas fa-bars"></i><span></span> <!-- Icon for bars -->
+                </button> <!-- End of button -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Navbar collapse -->
+                    <ul class="nav navbar-nav ms-auto"> <!-- Navbar navigation items -->
+                        <li class="nav-item"> <!-- Navbar item -->
+                            <a href="/profile" class="nav-link text-secondary"> <!-- Profile link -->
+                                <i class="fas fa-user"></i> <!-- Icon for user -->
+                            </a> <!-- End of profile link -->
+                        </li> <!-- End of navbar item -->
+                    </ul> <!-- End of navbar navigation items -->
+                </div> <!-- End of navbar collapse -->
+            </nav> <!-- End of navbar navigation -->
             <!-- end of navbar navigation -->
-            <div class="content">
-                <div class="container">
-                    <div class="page-title">
-                        <h3>Profile</h3>
-                    </div>
-                    <div class="box box-primary">
-                        <div class="box-body">
-                            <strong>Username:</strong><br> <%= user.Username %><br><br>
-                            <strong>Password:</strong><br> <%= user.Password %><br><br>
+            <div class="content"> <!-- Main content area -->
+                <div class="container"> <!-- Content container -->
+                    <div class="page-title"> <!-- Page title -->
+                        <h3>Profile</h3> <!-- Title text -->
+                    </div> <!-- End of page title -->
+                    <div class="box box-primary"> <!-- Box container -->
+                        <div class="box-body"> <!-- Box body container -->
+                            <strong>Username:</strong><br> <%= user.Username %><br><br> <!-- Username -->
+                            <strong>Password:</strong><br> <%= user.Password %><br><br> <!-- Password -->
                             <!-- Logout button -->
                             <a href="/login" class="btn btn-primary shadow-2 mb-4 logout-button">Logout</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/datatables/datatables.min.js"></script>
-    <script src="assets/js/initiate-datatables.js"></script>
-    <script src="assets/js/script.js"></script>
-</body>
+                        </div> <!-- End of box body container -->
+                    </div> <!-- End of box container -->
+                </div> <!-- End of content container -->
+            </div> <!-- End of main content area -->
+        </div> <!-- End of body content -->
+    </div> <!-- End of wrapper div -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script> <!-- jQuery -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JavaScript -->
+    <script src="assets/vendor/datatables/datatables.min.js"></script> <!-- DataTables JavaScript -->
+    <script src="assets/js/initiate-datatables.js"></script> <!-- Script for initiating DataTables -->
+    <script src="assets/js/script.js"></script> <!-- Custom JavaScript -->
+</body> <!-- End of body section -->
 
-</html>
+</html> <!-- End of HTML document -->
+
 
 
 
