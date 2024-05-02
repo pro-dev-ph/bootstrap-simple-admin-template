@@ -21,10 +21,17 @@
     <style>
         .box-body {
             margin-top: 20px;
+            position: relative; /* Make the box-body container relative */
         }
         
         .box-body strong {
             margin-bottom: 10px;
+        }
+        
+        .logout-button {
+            position: absolute;
+            bottom: 10px; /* Adjust as needed */
+            right: 10px; /* Adjust as needed */
         }
     </style>
 </head>
@@ -76,6 +83,8 @@
                             <strong>Name:</strong><br> John Doe<br><br>
                             <strong>Username:</strong><br> n/a<br><br>
                             <strong>Password:</strong><br> n/a<br><br>
+                            <!-- Logout button -->
+                            <a href="login.html" class="btn btn-primary shadow-2 mb-4 logout-button">Logout</a>
                         </div>
                     </div>
                 </div>
@@ -90,6 +99,7 @@
 </body>
 
 </html>
+
 
 
 
