@@ -66,17 +66,17 @@
                         <div class="col-lg-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <form accept-charset="utf-8" id="addIngredientForm">
+                                    <form action="/add-ingredient" method="POST">
                                         <div class="mb-3 row">
-                                            <label class="col-sm-2 form-label" for="password">Name</label>
+                                            <label class="col-sm-2 form-label" for="name">Name</label>
                                             <div class="col-sm-10">
-                                                <input type="text" id="ingredientName" name="ingredientName" placeholder="Enter ingredient name..." class="form-control">
+                                                <input type="text" class="form-control" id="ingredientName" name="ingredientName" placeholder="Enter ingredient name">
                                             </div>
                                         </div>
                                         <div class="mb-3 row">
                                             <div class="col-sm-10 offset-sm-2">
-                                                <input type="submit" class="btn btn-primary">
-                                                <input type="button" value="Cancel" onclick="location.href='/pantry'" class="btn btn-secondary">
+                                                <button id="submit" class="btn btn-primary shadow-2 mb-4" type="submit">Submit</button>
+                                                <button id="cancel" class="btn btn-primary shadow-2 mb-4" type="cancel">Cancel</button>
                                             </div>
                                         </div>
                                     </form>
