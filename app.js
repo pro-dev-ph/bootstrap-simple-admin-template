@@ -11,10 +11,7 @@ const app = express();
 app.use(session({
     secret: 'your-secret-key',
     resave: false,
-    saveUninitialized: false,
-    cookie: {
-        expires: 600000
-    }
+    saveUninitialized: false
 }));
 
 const PORT = process.env.PORT || 3300;
