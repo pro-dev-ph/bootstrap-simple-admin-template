@@ -1,8 +1,9 @@
 const mysql = require('mysql2');
+
+// For loading environment variables
 require('dotenv').config();
 
-
-// Create a connection pool
+// Create a connection pool using env
 const db = mysql.createConnection({
     host: process.env.AWS_HOST,
     port:  process.env.AWS_PORT,
@@ -11,6 +12,7 @@ const db = mysql.createConnection({
     database: process.env.AWS_DB
 });
 
+// Validating the database connection
 db.connect((err) => {
     if (err) {
         console.log(err.message);
@@ -19,7 +21,7 @@ db.connect((err) => {
         console.log("Database connected.");
 });
 
-// Function for getting a user by username and password
+// Function for getting a user by username and password using a promise for completion or failure of async operations
 function getUser(username, password){
     return new Promise((resolve, reject) => {
        const sql = 'SELECT * FROM Users WHERE Username = ? AND Password = ?';
@@ -55,7 +57,7 @@ function addUser(username, password){
     })
 }
 
-// Function to get user ingredients from the database
+// Function to get user ingredients
 function getUserIngredients(userId) {
     return new Promise((resolve, reject) => {
             const sql = 'SELECT * FROM Ingredients WHERE UserId = ?';
@@ -77,7 +79,7 @@ function getUserIngredients(userId) {
 
 // Function to save ingredient
 function addIngredient(name, userId) {
-return new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
         const sql = 'INSERT INTO Ingredients (Name, UserId) VALUES (?, ?)';
         db.query(sql, [name, userId], (err, result) => {
             if (err) {
