@@ -87,6 +87,26 @@ body {
     color: #444;
 }
 
+.black-square {
+            position: relative;
+            background-color: black;
+            width: calc(33.33% - 20px); /* Adjust the width for 3 columns with some spacing */
+            height: 200px; /* Adjust the height as needed */
+            margin-bottom: 20px;
+            margin-top: 10px; /* Add spacing to the top */
+            margin-right: 10px; /* Add spacing between the squares */
+            display: inline-block;
+        }
+    
+        .square-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white; /* Change text color if needed */
+            font-size: 20px; /* Adjust font size */
+        }
+
 .wrapper {
     display: flex;
     width: 100%;
