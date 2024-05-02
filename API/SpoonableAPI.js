@@ -52,9 +52,31 @@ class SpoonableAPI {
             return null; // Return null or any other appropriate value to indicate failure
         }
     }
+
+    async searchRecipe(query) {
+        const url = `${this.name}recipes/complexSearch?query=${query}&maxFat=25&number=2&apiKey=${this.api_key}`;
+
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+
+
+            const recipeMap = {};
+            data.results.forEach(recipe => {
+                recipeMap[recipe.title] = recipe.id;
+            });
+
+            return recipeMap;
+        } catch (error) {
+            console.error(error);
+            return {};
+        }
+    }
+
+
 }
 
-
+module.exports = SpoonableAPI;
 
 // Example usage
 const spoonableAPI = new SpoonableAPI();
@@ -62,24 +84,13 @@ const spoonableAPI = new SpoonableAPI();
     console.log(recipeMap);
 }); 
 
+spoonableAPI.searchRecipe("pasta").then(recipeMap => {
+    console.log(recipeMap);
+}); 
 
-spoonableAPI.getRecipeInfo(638604);
 
 spoonableAPI.getRecipeInfo(638604).then(recipe => {
-    console.log("Title:", recipe.getTitle());
-console.log("Ready in Minutes:", recipe.getReadyInMinutes());
-console.log("Servings:", recipe.getServings());
-console.log("Source URL:", recipe.getSourceUrl());
-console.log("Image URL:", recipe.getImageUrl());
-console.log("Summary:", recipe.getSummary());
-console.log("Ingredients:", recipe.getIngredients());
-console.log("Instructions:", recipe.getInstructions());
-console.log("Credits Text:", recipe.getCreditsText());
-console.log("Dish Types:", recipe.getDishTypes());
-console.log("Diets:", recipe.getDiets());
-console.log("Price Per Serving:", recipe.getPricePerServing());
-console.log("Health Score:", recipe.getHealthScore());
-console.log("Spoonacular Score:", recipe.getSpoonacularScore());
+    recipe.print();
 });
 
 

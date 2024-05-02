@@ -1,75 +1,56 @@
+const Ingredient = require('./Ingredient');
+
 class Recipe {
-    constructor(recipeData) {
-        this.data = recipeData;
+    constructor(json) {
+        try {
+            const jsonObject = json;
+
+            // Extracting title
+            this.title = jsonObject.title;
+
+            this.sourceURL = jsonObject.sourceUrl;
+
+            // Extracting id
+            this.id = jsonObject.id;
+
+            // Extracting ingredients
+            const ingredientsArray = jsonObject.extendedIngredients;
+            this.ingredients = [];
+            for (const obj of ingredientsArray) {
+                const { nameClean: name, amount, unit } = obj;
+                this.ingredients.push(new Ingredient(name, amount, unit));
+            }
+
+            // Extracting instructions
+            const analyzedInstructions = jsonObject.analyzedInstructions;
+            this.instructions = [];
+            for (const instructionObj of analyzedInstructions) {
+                const steps = instructionObj.steps;
+                for (const stepObj of steps) {
+                    const { step } = stepObj;
+                    this.instructions.push(step);
+                }
+            }
+        } catch (error) {
+            console.error(error);
+        }
     }
 
-    getId() {
-        return this.data.id;
+    print() {
+        console.log(this.title);
+        console.log();
+        console.log(this.sourceURL);
+        console.log();
+        console.log("Ingredients:");
+        for (const ingredient of this.ingredients) {
+            console.log(ingredient.toString());
+        }
+        console.log();
+        console.log("Instructions:");
+        for (const instruction of this.instructions) {
+            console.log(instruction);
+        }
     }
-
-    getTitle() {
-        return this.data.title;
-    }
-
-    getReadyInMinutes() {
-        return this.data.readyInMinutes;
-    }
-
-    getServings() {
-        return this.data.servings;
-    }
-
-    getSourceUrl() {
-        return this.data.sourceUrl;
-    }
-
-    getImageUrl() {
-        return this.data.image;
-    }
-
-    getSummary() {
-        return this.data.summary;
-    }
-
-    getIngredients() {
-        return this.data.extendedIngredients.map(ingredient => {
-            return {
-                name: ingredient.name,
-                amount: ingredient.amount,
-                unit: ingredient.unit
-            };
-        });
-    }
-
-    getInstructions() {
-        return this.data.instructions;
-    }
-
-    getCreditsText() {
-        return this.data.creditsText;
-    }
-
-    getDishTypes() {
-        return this.data.dishTypes;
-    }
-
-    getDiets() {
-        return this.data.diets;
-    }
-
-    getPricePerServing() {
-        return this.data.pricePerServing;
-    }
-
-    getHealthScore() {
-        return this.data.healthScore;
-    }
-
-    getSpoonacularScore() {
-        return this.data.spoonacularScore;
-    }
-
-    // Add more methods as needed based on the data structure
 }
 
 module.exports = Recipe;
