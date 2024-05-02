@@ -17,8 +17,9 @@ app.use(session({
     }
 }));
 
-// whats going on here
 const PORT = process.env.PORT || 3300;
+
+// For loading in css and bootstrap
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 app.use(express.urlencoded({extended: false}));
@@ -103,7 +104,6 @@ app.get('/pantry', (req, res) => {
                 res.render("pantry.ejs", { user, ingredients })
             })
     }
-
 })
 
 app.get('/profile', (req, res) => {
@@ -121,6 +121,9 @@ app.get('/cookbook', (req, res) => {
     res.render("cookbook.ejs")
 })
 
+app.get('/add-ingredient', (req, res) => {
+    res.render("add-ingredient.ejs")
+})
 
 // Start the server
 app.listen(PORT, () => {
