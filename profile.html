@@ -11,38 +11,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home | PanTRY</title>
+    <title>Profile | Bootstrap Simple Admin Template</title>
     <link href="assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
     <link href="assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
     <link href="assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/datatables/datatables.min.css" rel="stylesheet">
     <link href="assets/css/master.css" rel="stylesheet">
-    <link href="assets/vendor/flagiconcss/css/flag-icon.min.css" rel="stylesheet">
-    <style>
-        .black-square {
-            position: relative;
-            background-color: black;
-            width: calc(33.33% - 20px); /* Adjust the width for 3 columns with some spacing */
-            height: 200px; /* Adjust the height as needed */
-            margin-bottom: 20px;
-            margin-top: 10px; /* Add spacing to the top */
-            margin-right: 10px; /* Add spacing between the squares */
-            display: inline-block;
-        }
-    
-        .square-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white; /* Change text color if needed */
-            font-size: 20px; /* Adjust font size */
-        }
-    </style>
-    
-    
-    
-      
 </head>
 
 <body>
@@ -64,6 +39,7 @@
     
             </ul>
         </nav>
+        <!-- end of sidebar component -->
         <div id="body" class="active">
             <!-- navbar navigation component -->
             <nav class="navbar navbar-expand-lg navbar-white bg-white">
@@ -94,54 +70,56 @@
             <!-- end of navbar navigation -->
             <div class="content">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 text-center">
-                            <input type="text" class="form-control" placeholder="Search Recipe">
-                            <button class="btn btn-primary mt-3">Search</button>
-                            <button class="btn btn-secondary mt-3">Add Ingredient</button>
+                    <div class="page-title">
+                        <h3>Profile</h3>
+                    </div>
+                    <div class="box box-primary">
+                        <div class="box-body">
+                            <table width="100%" class="table table-hover" id="dataTables-example">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>John Doe</td>
+                                    </tr>
+                                <thead>
+                                    <tr>
+                                        <th>Username</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td>n/a</td>
+                                        </tr>
+                                </thead>
+                                <thead>
+                                    <tr>
+                                        <th>Password</th>
+                                    </tr>
+                                    <tbody>
+                                        <tr>
+                                            <td>n/a</td>
+                                        </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="black-square-container">
-                                <div class="black-square">
-                                    <span class="square-text">Recipe 1</span>
-                                </div>
-                                <div class="black-square">
-                                    <span class="square-text">Recipe 2</span>
-                                </div>
-                                <div class="black-square">
-                                    <span class="square-text">Recipe 3</span>
-                                </div>
-                                <div class="black-square">
-                                    <span class="square-text">Recipe 4</span>
-                                </div>
-                                <div class="black-square">
-                                    <span class="square-text">Recipe 5</span>
-                                </div>
-                                <div class="black-square">
-                                    <span class="square-text">Recipe 6</span>
-                                </div>
-                                <div class="black-square">
-                                    <span class="square-text">Recipe 7</span>
-                                </div>
-                                <div class="black-square">
-                                    <span class="square-text">Recipe 8</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="text-center mt-3">
+                        <a href="edit_profile.html" class="btn btn-primary"><i class="fas fa-edit"></i> Edit Profile</a>
                     </div>
-                                                  
                 </div>
-            </div>            
+            </div>
         </div>
     </div>
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/chartsjs/Chart.min.js"></script>
-    <script src="assets/js/dashboard-charts.js"></script>
+    <script src="assets/vendor/datatables/datatables.min.js"></script>
+    <script src="assets/js/initiate-datatables.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
 </html>
+
 
