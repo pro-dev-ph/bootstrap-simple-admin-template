@@ -1,17 +1,11 @@
 <!doctype html>
-<!--
-* Bootstrap Simple Admin Template
-* Version: 2.1
-* Author: Alexis Luna
-* Website: https://github.com/alexis-luna/bootstrap-simple-admin-template
--->
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Forms | Bootstrap Simple Admin Template</title>
+    <title>Add Ingredient</title>
     <link href="assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
     <link href="assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
     <link href="assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
@@ -92,6 +86,22 @@
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/form-validator.js"></script>
     <script src="assets/js/script.js"></script>
-</body>
+    <script src="database.js"></script>
+    <script>
+        // Add event listener for form submission
+        document.getElementById('addIngredientForm').addEventListener('submit', function(event) {
+            // Prevent default form submission behavior
+            event.preventDefault();
 
+            // Retrieve the ingredient name from the input field
+            const ingredientName = document.getElementById('ingredientName').value;
+
+            // Call the addIngredient function from database.js
+            addIngredient(ingredientName, user.Id);
+
+            // Redirect the user to pantry.html
+            location.href = '/pantry';
+        });
+    </script>
+</body>
 </html>
