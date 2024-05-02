@@ -1,9 +1,25 @@
 {
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "This is recipe app project",
+  "main": "login.html",
+  "scripts": {
+    "devStart": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Press ^C at any time to quit."
+  },
+  "author": "s",
+  "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "express-session": "^1.18.0",
     "mysql2": "^3.9.7"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.0"
   }
 }
