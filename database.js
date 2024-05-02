@@ -17,32 +17,51 @@ db.connect((err) => {
         console.log("Database connected.");
 });
 
-function getUserByUsernameAndPassword(username, password) {
+// Function for getting a user by username and password
+function getUser(username, password){
     return new Promise((resolve, reject) => {
-        db.query('SELECT * FROM Users WHERE username = ? AND password = ?', [username, password], (err, results) => {
-            if (err) {
+       const sql = 'SELECT * FROM Users WHERE Username = ? AND Password = ?';
+       db.query(sql, [username, password], (err, results) => {
+           if (err) {
                 reject(err);
-                return;
-            }
-            resolve(results[0].Username); // Assuming username is unique, so only return the first result
-        });
+           }
+           else {
+                if (results.length >= 0) {
+                    resolve(results[0]);
+                }
+                else {
+                    resolve(null);
+                }
+           }
+       });
     });
 }
 
-function doesUserExist(username, password) {
+// Function for adding a user
+function addUser(username, password){
     return new Promise((resolve, reject) => {
-        db.query('SELECT COUNT(*) AS count FROM Users WHERE username = ? AND password = ?', [username, password], (err, results) => {
+        const sql = 'INSERT INTO Users (Username, Password) VALUES (?, ?)';
+        db.query(sql, [username, password], (err, result) => {
             if (err) {
                 reject(err);
-                return;
             }
-            const userCount = results[0] ? results[0].count : 0;
-            resolve(userCount > 0); // Resolve with true if user count is greater than 0, indicating user exists
-        });
-    });
+            else {
+                console.log("1 record inserted");
+                resolve(1);
+            }
+        })
+    })
 }
 
-module.exports = { getUserByUsernameAndPassword };
-module.exports = { doesUserExist };
 
+// Function to get user ingredients from the database
+function getUserIngredients(userId) {
+
+}
+
+
+function addIngredientToUser(){
+}
+
+module.exports = { getUser, addUser }
 
