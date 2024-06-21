@@ -1,39 +1,19 @@
-# About Bootstrap Simple Admin Template
-*Bootstrap Simple Admin Template is a simple admin template packed with more UI components than any other admin themes, its exceptional user interface is perfectly crafted and advanced layout features are optimized to suite every modern web application project and highly responsive to serve from a Mobile first to Desktop screen.* 
+# Recipe App
 
-![Bootstrap Simple Admin Template - Dashboard](https://i.postimg.cc/xjG9yLNw/bootstrap-simple-admin-template.png)
+Welcome to the Recipe App! This README file serves as a guide to help you get started with using our application.
 
-### What's New?
-- Upgrade Bootstrap to version 5.3
-- Updated third-party plugins to recent versions
+## Overview:
 
-View live demo!
-[view demo](https://pro-dev-ph.github.io/bootstrap-simple-admin-template/)
+The Recipe App is a user-friendly desktop application designed for use on Windows, aimed to assist you in discovering, organizing, and sharing your favorite recipes. This application is built using HTML for the frontend (GUI) and SQL is also being utilized for the database management.
 
-### Layout features
-- Header topbar navigation
-- Sidebar navigation
-- Main Body
+## Key Features:
 
-### 20+ Pre-built pages
-- Auth login page
-- Auth signup page
-- Auth recover password page
-- Dashboard page
-- Charts page 
-- 404 Error page
-- 500 Error page
-- Users page
-- User roles and permission page
-- Settings page and more to come…
+1. Recipe Discovery: Explore a vast collection of recipes across various cuisines, meal types, and dietary preferences. Find inspiration for your next meal with our curated selection of dishes.
 
+2. Recipe Recommendation: OpenAI is utilized to recommend recipes based on the user's interests.
 
-Bootstrap Simple Admin Template is a simple admin panel and dashboard template based on HTML5, designed for backend application, web & mobile application, SaaS application, website backend, and e-commerce admin portal. With 5+ years working on Web applications we are confident to give you the best admin template for your web application with optimized UI/UX on mobile and on the search engine.
+3. Recipe Management: Save your favorite recipes to your personal collection for quick and easy access. Organize recipes into categories, such as breakfast, lunch, dinner, desserts, and more, to stay organized and efficient in the kitchen.
 
-
-## License
-
-Bootstrap Simple Admin Template is open-source software licensed under the [Apache license 2.0](http://www.apache.org/licenses/LICENSE-2.0).
-
-Copyright (c) 2019-present, Pro Dev Ph
-
+4. Customization: Modify recipes to suit your taste preferences or dietary restrictions. Easily adjust ingredients, portions, and cooking methods to create personalized versions of your favorite dishes.
+   
+5. Cooking Instructions: Access clear and concise cooking instructions for each recipe to guide you through the cooking process with confidence.
