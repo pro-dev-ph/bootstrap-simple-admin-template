@@ -352,7 +352,7 @@ table.dataTable>tbody>tr.child ul.dtr-details {
 }
 
 .nav-tabs .nav-item {
-    margin-bottom: -2px;
+    margin-bottom: 0;
 }
 
 .nav-tabs .nav-link {
