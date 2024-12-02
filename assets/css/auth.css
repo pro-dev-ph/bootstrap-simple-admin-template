@@ -1,8 +1,8 @@
 /*------------------------------------------------------------------
 * Bootstrap Simple Admin Template
-* Version: 3.0
+* Version: 3.9
 * Author: Alexis Luna
-* Website: https://github.com/alexis-luna/bootstrap-simple-admin-template
+* Website: https://github.com/pro-dev-ph/bootstrap-simple-admin-template
 -------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
@@ -12,7 +12,10 @@
 2. Contents / #auth-content
 3. Cards / .card
 4. Miscellaneous
-5. Adjustments to dafault behaviors
+5. BG Colors
+6. Buttons
+7. Forms
+8. Adjustments to dafault behaviors
 -------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
@@ -52,26 +55,15 @@ body {
 [3. Cards / .card]
 */
 .auth-content .card {
-    margin-bottom: 0;
-    -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
-    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
-    border: none;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .04);
+    border: 1px solid #eaedf1;
+    border-radius: 5.2px;
+    overflow: hidden;
 }
 
 .auth-content .card .card-block,
 .auth-content .card .card-body {
     padding: 30px 25px;
-}
-
-.auth-content .form-control {
-    background: #f4f7fa;
-    min-height: 42px;
-    line-height: 42px;
-    font-size: 14px;
-    padding: 10px 15px;
-    height: 42px;
 }
 
 /*------------------------------------------------------------------
@@ -87,7 +79,330 @@ p.text-muted {
 }
 
 /*------------------------------------------------------------------
-[5. Adjustments to dafault behaviors]
+[5. BG Colors]
+*/
+.bg-primary {
+    background-color: #1e84c4 !important;
+}
+
+.bg-success {
+    background-color: #1bb394 !important;
+}
+
+.bg-secondary {
+    background-color: #5d7186 !important;
+}
+
+.bg-info {
+    background-color: #23c6c8 !important;
+}
+
+.bg-warning {
+    background-color: #f8ac59 !important;
+}
+
+.bg-danger {
+    background-color: #ed5565 !important;
+}
+
+.bg-dark {
+    background-color: #323a46 !important;
+}
+
+.bg-light {
+    background-color: #f6f8fb !important;
+}
+
+/*------------------------------------------------------------------
+[6. Buttons]
+*/
+.btn-primary {
+    background-color: #1e84c4;
+    border-color: #1e84c4;
+}
+
+.btn-primary:hover {
+    background-color: #1b77b0;
+    border-color: #1b77b0;
+}
+
+.btn-primary:active {
+    background-color: #186a9d !important;
+    border-color: #176393 !important;
+}
+
+.btn-success {
+    background-color: #1bb394;
+    border-color: #1bb394;
+}
+
+.btn-success:hover {
+    background-color: #18a185;
+    border-color: #18a185;
+}
+
+.btn-success:active {
+    background-color: #168f76 !important;
+    border-color: #14866f !important;
+}
+
+.btn-secondary {
+    background-color: #5d7186;
+    border-color: #5d7186;
+}
+
+.btn-secondary:hover {
+    background-color: #546679;
+    border-color: #546679;
+}
+
+.btn-secondary:active {
+    background-color: #4a5a6b !important;
+    border-color: #465565 !important;
+}
+
+.btn-info {
+    background-color: #23c6c8;
+    border-color: #23c6c8;
+}
+
+.btn-info:hover {
+    background-color: #20b2b4;
+    border-color: #20b2b4;
+}
+
+.btn-info:active {
+    background-color: #1c9ea0 !important;
+    border-color: #1a9596 !important;
+}
+
+.btn-warning {
+    background-color: #f8ac59;
+    border-color: #f8ac59;
+}
+
+.btn-warning:hover {
+    background-color: #df9b50;
+    border-color: #df9b50;
+}
+
+.btn-warning:active {
+    background-color: #c68a47 !important;
+    border-color: #ba8143 !important;
+}
+
+.btn-danger {
+    background-color: #ed5565;
+    border-color: #ed5565;
+}
+
+.btn-danger:hover {
+    background-color: #d54d5b;
+    border-color: #d54d5b;
+}
+
+.btn-danger:active {
+    background-color: #be4451 !important;
+    border-color: #b2404c !important;
+}
+
+.btn-dark {
+    background-color: #323a46;
+    border-color: #323a46;
+}
+
+.btn-dark:hover {
+    background-color: #474e59;
+    border-color: #474e59;
+}
+
+.btn-dark:active {
+    background-color: #5b616b !important;
+    border-color: #474e59 !important;
+}
+
+.btn-light {
+    background-color: #eef2f7;
+    border-color: #eef2f7;
+}
+
+.btn-light:hover {
+    background-color: #d6dade;
+    border-color: #d6dade;
+}
+
+.btn-light:active {
+    color: #ffffff !important;
+    background-color: #bec2c6 !important;
+    border-color: #b3b6b9 !important;
+}
+
+.btn-outline-primary {
+    color: #1e84c4;
+    border-color: #1e84c4;
+}
+
+.btn-outline-primary:hover {
+    color: #ffffff !important;
+    background-color: #1e84c4;
+    border-color: #1e84c4;
+}
+
+.btn-outline-primary:active {
+    background-color: #1e84c4 !important;
+    border-color: #1e84c4 !important;
+}
+
+.btn-outline-secondary {
+    color: #5d7186;
+    border-color: #5d7186;
+}
+
+.btn-outline-secondary:hover {
+    color: #ffffff;
+    background-color: #5d7186;
+    border-color: #5d7186;
+}
+
+.btn-outline-secondary:active {
+    background-color: #5d7186 !important;
+    border-color: #5d7186 !important;
+}
+
+.btn-outline-success {
+    color: #1bb394;
+    border-color: #1bb394;
+}
+
+.btn-outline-success:hover {
+    color: #ffffff;
+    background-color: #1bb394;
+    border-color: #1bb394;
+}
+
+.btn-outline-success:active {
+    background-color: #1bb394 !important;
+    border-color: #1bb394 !important;
+}
+
+.btn-outline-info {
+    color: #23c6c8;
+    border-color: #23c6c8;
+}
+
+.btn-outline-info:hover {
+    color: #ffffff;
+    background-color: #23c6c8;
+    border-color: #23c6c8;
+}
+
+.btn-outline-info:active {
+    color: #ffffff !important;
+    background-color: #23c6c8 !important;
+    border-color: #23c6c8 !important;
+}
+
+.btn-outline-warning {
+    color: #f8ac59;
+    border-color: #f8ac59;
+}
+
+.btn-outline-warning:hover {
+    color: #ffffff;
+    background-color: #f8ac59;
+    border-color: #f8ac59;
+}
+
+.btn-outline-warning:active {
+    color: #ffffff !important;
+    background-color: #f8ac59 !important;
+    border-color: #f8ac59 !important;
+}
+
+.btn-outline-danger {
+    color: #ed5565;
+    border-color: #ed5565;
+}
+
+.btn-outline-danger:hover {
+    color: #ffffff;
+    background-color: #ed5565;
+    border-color: #ed5565;
+}
+
+.btn-outline-danger:active {
+    color: #ffffff !important;
+    background-color: #ed5565 !important;
+    border-color: #ed5565 !important;
+}
+
+.btn-outline-dark {
+    color: #323a46;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #323a46;
+}
+
+.btn-outline-dark:hover {
+    color: #ffffff;
+    background-color: #323a46;
+    border-color: #323a46;
+}
+
+.btn-outline-dark:active {
+    color: #ffffff !important;
+    background-color: #323a46 !important;
+    border-color: #323a46 !important;
+}
+
+.btn-outline-light {
+    color: black;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #d6dade;
+}
+
+.btn-outline-light:hover {
+    color: black;
+    background-color: #d6dade;
+    border-color: #d6dade;
+}
+
+.btn-outline-light:active {
+    color: black !important;
+    background-color: #d6dade !important;
+    border-color: #d6dade !important;
+}
+
+/*------------------------------------------------------------------
+[7. Forms]
+*/
+.form-control,
+.form-select {
+    border-radius: 3px;
+    border: 2px solid #E0E0E0;
+    background-color: #FAFAFA !important;
+    box-shadow: none !important;
+}
+
+.form-check .form-check-input {
+    border: 2px solid #d2d6de;
+}
+
+.form-control:focus,
+.form-select:focus, {
+    box-shadow: none !important;
+    border: 2px solid #1e84c4;
+    background-color: #FAFAFA;
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid,
+.was-validated .form-select:invalid,
+.was-validated .form-control:invalid {
+    border-color: #ed5565;
+}
+
+/*------------------------------------------------------------------
+[8. Adjustments to dafault behaviors]
 */
 .btn {
     padding: 10px 20px;
