@@ -269,13 +269,14 @@ body {
 
 .btn-rounded {
     border-radius: 10em;
-    padding: 6px 8px;
+    padding: 5px 9px;
     font-size: small;
     text-transform: none;
     text-shadow: none !important;
     background: #eaeaea;
     border-color: transparent;
     border: none;
+    line-height: 1.2rem;
 }
 
 .btn-rounded:hover {
