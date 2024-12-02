@@ -394,6 +394,10 @@ p.text-muted {
     background-color: #FAFAFA;
 }
 
+.form-check-input:focus {
+    box-shadow: none !important;
+}
+
 .form-control.is-invalid,
 .form-select.is-invalid,
 .was-validated .form-select:invalid,
