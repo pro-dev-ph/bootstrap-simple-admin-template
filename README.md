@@ -4,8 +4,9 @@
 ![Bootstrap Simple Admin Template - Dashboard](https://i.postimg.cc/xjG9yLNw/bootstrap-simple-admin-template.png)
 
 ### What's New?
-- Upgrade Bootstrap to version 5.3
-- Updated third-party plugins to recent versions
+- Upgrade Bootstrap to version 5.3.3
+- New styles and improved buttons, cards, tabs, forms, bg colors
+- Improved auth pages (sign in, sign up, forgot password)
 
 View live demo!
 [view demo](https://pro-dev-ph.github.io/bootstrap-simple-admin-template/)
