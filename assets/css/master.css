@@ -722,6 +722,7 @@ table.dataTable>tbody>tr.child ul.dtr-details {
     border-radius: 3px;
     border: 2px solid #E0E0E0;
     background-color: #FAFAFA !important;
+    box-shadow: none !important;
 }
 
 .form-check .form-check-input {
